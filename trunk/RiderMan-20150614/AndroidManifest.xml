@@ -1,0 +1,231 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.riderman"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 只是拼写错误就导致了应用key失效，要仔细 比如名字错了 默认包命错了 都错了 -->
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="org.riderman.RiderManApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="xy3cG4xjxTQkMjdHdprcgiBM" />
+
+        <activity
+            android:name="org.riderman.Splash"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.riderman.Homemenu"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.riderman.BikeRent"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.riderman.TestBranch"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.riderman.PaymentConfirm"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.riderman.TaobaoConfirm"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+      <activity android:name="org.riderman.test.TestFrg" >
+        </activity>
+
+        <activity android:name="org.riderman.Login" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.Register" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.RegisterCode" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.RegisterPassword"
+            android:theme="@style/EbikeTheme" >
+        </activity>
+        <activity android:name="org.riderman.selfspace.SelfSpace" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.selfspace.SelfSetting" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity
+            android:name="org.riderman.picpopupwindow.SelectPicPopupWindow"
+            android:theme="@style/EbikeTheme" >
+        </activity>
+        <activity android:name="org.riderman.selfspace.NicknameSetting" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.selfspace.RenderSetting" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.selfspace.OrderList"
+            android:theme="@style/EbikeTheme" >
+        </activity>
+        <activity android:name="org.riderman.selfspace.OrderComment"
+            android:theme="@style/EbikeTheme" >
+        </activity>
+        <activity android:name="org.riderman.selfspace.OrderDetail"
+            android:theme="@style/EbikeTheme" >
+        </activity>
+        <activity
+            android:name="org.riderman.DestSearch"
+            android:theme="@style/EbikeTheme" >
+        </activity>
+        <activity android:name="org.riderman.test.MainActivity" >
+        </activity>
+        <activity android:name="org.riderman.selfspace.AccountSetting" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.selfspace.PasswordSetting" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.selfspace.PhoneSecurity" 
+            android:theme="@style/EbikeTheme">
+        </activity>
+        <activity android:name="org.riderman.selfspace.PhoneBind"
+            android:theme="@style/EbikeTheme" >
+        </activity>
+        <activity android:name="org.riderman.BikeOrder" >
+        </activity>
+        <activity
+            android:name="org.riderman.BikeStoreDetail"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.riderman.BikeStoreList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+                <activity
+            android:name="org.riderman.routers.Router1"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+           <activity
+            android:name="org.riderman.routers.Router2"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+                
+                    <activity
+            android:name="org.riderman.routers.Router3"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+           
+                             <activity
+            android:name="org.riderman.routers.Router4"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!--易信分享回调 -->
+<activity
+  android:name=".yxapi.YXEntryActivity"
+  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+  android:configChanges="keyboardHidden|orientation|screenSize"
+  android:exported="true"
+  android:screenOrientation="portrait" />
+                    
+   <activity
+  android:name="cn.sharesdk.framework.ShareSDKUIShell"
+  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+  android:configChanges="keyboardHidden|orientation|screenSize"
+  android:screenOrientation="portrait"
+  android:windowSoftInputMode="stateHidden|adjustResize" >
+   <intent-filter>
+        <data android:scheme="tencent100371282" />
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+</activity>     
+        
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+    <!-- 权限设置 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 权限设置 -->
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+</manifest>

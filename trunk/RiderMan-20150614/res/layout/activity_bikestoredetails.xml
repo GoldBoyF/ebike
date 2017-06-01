@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitesmoke"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:id="@+id/paymentitle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+               android:background="@color/darkcyan"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:gravity="center"
+            android:text="商铺详情"
+            android:textColor="@color/ebike_title_li"
+            android:textSize="@dimen/text_large_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/storeownername"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:hint="韩师傅        "
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_little_size" />
+
+        <TextView
+            android:id="@+id/storeowncontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="18976588453"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_little_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/dialbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/selector_button_pressed"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="拨打电话"
+                android:textColor="@color/ebike_title_li" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/contact"
+        android:layout_below="@id/title"
+        android:background="@color/whitesmoke" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            tools:context="${relativePackage}.${activityClass}" >
+
+            <!-- 如果订单为空 记得改为返回功能 -->
+
+            <ListView
+                android:id="@+id/bikestoredetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:dividerHeight="2dp"
+                android:listSelector="@color/transparent" >
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/contactlinearylayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bikestoredetail"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bookinstore"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_button_pressed"
+                    android:text="预定"
+                    android:textColor="@color/ebike_title_li" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/linearunselect"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/storetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="营业时间："
+                            android:textColor="@color/ebike_title_444444"
+                            android:textSize="@dimen/text_little_size" />
+
+                        <ImageView
+                            android:id="@+id/ImageView02"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_horizionlinebar" />
+
+                        <TextView
+                            android:id="@+id/TextView04"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="夏季： 7:00--18:00"
+                            android:textColor="@color/ebike_title_999999"
+                            android:textSize="@dimen/text_little_size" />
+
+                        <TextView
+                            android:id="@+id/name_adviec"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:text="冬季： 7:00--18:00"
+                            android:textColor="@color/ebike_title_999999"
+                            android:textSize="@dimen/text_little_size" />
+
+                        <ImageView
+                            android:id="@+id/ImageView03"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_horizionlinebar" />
+
+                        <TextView
+                            android:id="@+id/TextView05"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="用户评价"
+                            android:textColor="@color/ebike_title_444444"
+                            android:textSize="@dimen/text_little_size" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_horizionlinebar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/peroption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactlinearylayout"
+                android:dividerHeight="2dp" >
+
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/diviline2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/contact"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_horizionlinebar" />
+
+</RelativeLayout>

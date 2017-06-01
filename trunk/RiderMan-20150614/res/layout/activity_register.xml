@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebike_light_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:background="@color/darkcyan"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingRight="@dimen/title_padding"
+        android:layout_height="@dimen/tile_height" >
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/register"
+            android:textSize="@dimen/text_large_size" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/next"
+            android:textColor="@drawable/selector_text_click_white"
+            android:textSize="@dimen/text_little_size"
+            android:background="@color/transparent"/>
+        
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/cancel"
+            android:textColor="@drawable/selector_text_click_white"
+            android:textSize="@dimen/text_little_size"
+            android:background="@color/transparent"
+			 />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_content"
+        android:layout_below="@id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/text_margin"
+            android:textSize="@dimen/text_little_size"
+            android:text="请输入你的手机号：" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+
+        <RelativeLayout
+            android:id="@+id/phone_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/imageView1"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/input_height"
+                android:text="+86"
+                android:textColor="@color/gray"
+                android:gravity="center"
+                android:editable="false"
+                android:textSize="@dimen/text_little_size"
+                android:singleLine="true"
+                android:ems="10"
+                android:background="@null" >
+
+                <requestFocus />
+            </EditText>
+            
+            <ImageView
+	            android:id="@+id/imageView3"
+	            android:scaleType="fitXY"
+	            android:layout_width="1dp"
+	            android:layout_height="@dimen/input_height"
+	            android:layout_toRightOf="@id/editText1" 
+	            android:src="@drawable/img_horizionlinebar" />
+
+            <EditText
+                android:id="@+id/phone_edittext"
+                android:layout_toRightOf="@id/imageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:ems="10"
+                android:focusable="true"
+                android:textSize="@dimen/text_little_size"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:background="@null" />
+
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/imageView2"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/phone_content"
+            android:src="@drawable/img_horizionlinebar" />
+        
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_below="@+id/imageView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/text_margin"
+            android:text="为了验证你的身份，我们将会发送短信验证码"
+            android:textSize="@dimen/text_little_size" />
+        
+        
+
+    </RelativeLayout>
+
+</RelativeLayout>

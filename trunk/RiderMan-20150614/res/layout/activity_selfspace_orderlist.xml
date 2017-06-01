@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebike_light_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:background="@color/darkcyan"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/tile_height" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_returnback" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/orderlist_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent"
+                android:drawableRight="@drawable/icon_down_unpressed"
+                android:gravity="center"
+                android:text="租车记录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large_size" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/ebike_light_bg" >
+
+            <ListView
+                android:id="@+id/order_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:dividerHeight="0dp"
+                android:cacheColorHint="#00000000" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statusfilter_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android:id="@+id/all_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_text_click_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="所有"
+                android:textColor="@drawable/selector_text_click_color"
+                android:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android:id="@+id/ImageView22"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android:id="@+id/topay_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_text_click_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@drawable/selector_text_click_color"
+                android:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android:id="@+id/ImageView21"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android:id="@+id/payed_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_text_click_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="待评价"
+                android:textColor="@drawable/selector_text_click_color"
+                android:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android:id="@+id/ImageView19"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_horizionlinebar" />
+
+            <LinearLayout
+                android:id="@+id/trans_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent"
+                android:orientation="vertical" >
+            </LinearLayout>
+          
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+
+
+  	
+
+</LinearLayout>

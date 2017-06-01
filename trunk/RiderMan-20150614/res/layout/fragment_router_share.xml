@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkcyan"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:id="@+id/paymentitle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:gravity="center"
+            android:text="线路推荐"
+            android:textColor="@color/ebike_title_li"
+            android:textSize="@dimen/text_large_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+      
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/picsnip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imageViewsnipshot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_router2"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/snipshotcamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/icon_camera" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="开发中......"
+                android:textColor="@color/ebike_title_444444"
+                android:textSize="@dimen/text_large_size" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_marginBottom="28dp"
+                android:text="拍照上传"
+                android:textColor="@color/ebike_title_444444"
+                android:textSize="@dimen/text_middle_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

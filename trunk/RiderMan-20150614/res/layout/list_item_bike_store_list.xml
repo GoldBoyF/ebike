@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android1:background="@color/whitesmoke"
+    tools:context="${relativePackage}.${activityClass}" 
+ android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android1:id="@+id/linearLayoutstoredetail"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android1:background="@color/linearunselect"
+        android1:orientation="vertical" >
+
+               <LinearLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_marginLeft="15dp"
+            android1:layout_marginRight="15dp"
+            android1:layout_marginTop="15dp"
+            android1:background="@color/linearunselect" >
+
+            <TextView
+                android1:id="@+id/storetitle"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_gravity="center_vertical"
+                android1:hint="西湖车行"
+                android1:textColor="@color/ebike_title_444444"
+                android1:textSize="@dimen/text_little_size" />
+
+            <RelativeLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="fill_parent" >
+
+                <RatingBar
+                    android1:id="@+id/storerating"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="fill_parent"
+                    android1:layout_alignParentRight="true"
+                    android1:layout_centerHorizontal="true"
+                    android1:isIndicator="true"
+                    android1:numStars="5"
+                    android1:progressDrawable="@drawable/rating_yellow"
+                    android1:rating="2.0"
+                    android1:stepSize="0.5" />
+
+            </RelativeLayout>
+
+</LinearLayout>
+
+        <LinearLayout
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_marginBottom="15dp"
+            android1:layout_marginLeft="15dp"
+            android1:layout_marginRight="15dp"
+            android1:background="@color/linearunselect" >
+
+            <TextView
+                android1:id="@+id/storeaddr"
+                android1:layout_width="170dp"
+                android1:layout_height="fill_parent"
+                android1:layout_gravity="center_vertical"
+                android1:gravity="left|center_vertical"
+                android1:hint="杭州市西湖区29号"
+                android1:textColor="@color/ebike_title_999999"
+                android1:textSize="@dimen/text_little_size" />
+
+            <RelativeLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="match_parent" >
+
+                <TextView
+                    android1:id="@+id/storedistance"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentRight="true"
+                    android1:layout_centerVertical="true"
+                    android1:layout_marginLeft="2dp"
+                    android1:hint="距离1.4千米"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+
+                <ImageView
+                    android1:id="@+id/imgtitle"
+                    android1:layout_width="13dp"
+                    android1:layout_height="wrap_content"
+                    android1:layout_centerVertical="true"
+                    android1:layout_toLeftOf="@+id/storedistance"
+                    android1:src="@drawable/icon_mark" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android1:id="@+id/diviline2"
+            android1:layout_width="fill_parent"
+            android1:layout_height="1dp"
+            android1:layout_marginLeft="15dp"
+            android1:layout_marginRight="15dp"
+            android1:scaleType="fitXY"
+            android1:src="@drawable/img_horizionlinebar" />
+
+    </LinearLayout>
+
+</LinearLayout>

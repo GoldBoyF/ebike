@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 不要随便用主题 避免出错 -->
+
+    <ScrollView
+        android1:id="@+id/FilterscrollAllHZ"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:layout_below="@id/title"
+        android1:background="@color/whitesmoke"
+        android1:visibility="visible" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:layout_marginLeft="20dp"
+            android1:layout_marginRight="20dp"
+            android1:layout_marginTop="40dp"
+            android1:background="@drawable/corner_view_gray"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView02"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <LinearLayout
+                android1:layout_width="match_parent"
+                android1:layout_height="40dp"
+                android1:background="@color/transparent"
+                android1:orientation="horizontal" >
+
+                <TextView
+                    android1:id="@+id/TextView1_1"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="西湖苏堤"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android1:id="@+id/TextView1_2"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_marginLeft="1dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="西溪湿地"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android1:id="@+id/TextView1_3"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_marginLeft="1dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="丝绸博物馆"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+            </LinearLayout>
+
+            <ImageView
+                android1:id="@+id/ImageView01"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <LinearLayout
+                android1:layout_width="match_parent"
+                android1:layout_height="40dp"
+                android1:background="@color/transparent"
+                android1:orientation="horizontal" >
+
+                <TextView
+                    android1:id="@+id/TextView2_1"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="杭州植物园"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android1:id="@+id/TextView2_2"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_marginLeft="1dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="浙江大学"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android1:id="@+id/TextView2_3"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_marginLeft="1dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="灵隐寺"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+            </LinearLayout>
+
+            <ImageView
+                android1:id="@+id/ImageView18"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <LinearLayout
+                android1:layout_width="match_parent"
+                android1:layout_height="40dp"
+                android1:background="@color/transparent"
+                android1:orientation="horizontal" >
+
+                <TextView
+                    android1:id="@+id/TextView3_1"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="茶叶博物馆"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android1:id="@+id/TextView3_2"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_marginLeft="1dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="雷峰塔"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android1:id="@+id/TextView3_3"
+                    android1:layout_width="120dp"
+                    android1:layout_height="fill_parent"
+                    android1:layout_marginLeft="1dp"
+                    android1:layout_weight="1"
+                    android1:background="@drawable/selector_text_click_bg"
+                    android1:clickable="true"
+                    android1:gravity="center"
+                    android1:text="杭州乐园"
+                    android1:textColor="@color/ebike_title_999999"
+                    android1:textSize="@dimen/text_little_size" />
+            </LinearLayout>
+
+            <ImageView
+                android1:id="@+id/ImageView17"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android1:id="@+id/title"
+        android1:layout_width="fill_parent"
+        android1:layout_height="50dp"
+        android1:background="@color/darkcyan" >
+
+        <LinearLayout
+            android1:id="@+id/searchbar"
+            android1:layout_width="wrap_content"
+            android1:layout_height="50dp"
+            android1:background="@color/darkcyan"
+            android1:orientation="vertical" >
+
+            <ImageButton
+                android1:id="@+id/backButton_search"
+                android1:layout_width="35dp"
+                android1:layout_height="35dp"
+                android1:layout_gravity="left|center_vertical"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                android1:layout_marginTop="10dp"
+                android1:background="@color/transparent"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/selector_returnback" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/LinearLayout01"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_gravity="center_vertical"
+            android1:background="@color/whitesmoke"
+            android1:gravity="center_vertical"
+            android1:orientation="horizontal" >
+
+            <ImageView
+                android1:id="@+id/ImageButton02"
+                android1:layout_width="25dp"
+                android1:layout_height="25dp"
+                android1:background="@color/transparent"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/icon_serch_img" />
+
+            <EditText
+                android1:id="@+id/inputsearch"
+                android1:layout_width="fill_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_gravity="center_vertical"
+                android1:layout_weight="1"
+                android1:background="@null"
+                android1:hint="请输入地点"
+                android1:inputType="textPersonName" />
+
+            <Button
+                android1:id="@+id/search"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_marginTop="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/selector_returnback"
+                android1:text="搜索"
+                android1:textSize="@dimen/text_middle_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

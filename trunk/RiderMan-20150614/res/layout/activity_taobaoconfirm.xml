@@ -1,0 +1,116 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/whitesmoke"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+         android:id="@+id/paymentitle"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/tile_height"
+         android:background="@color/darkcyan"
+         android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+
+            <TextView
+                android:id="@+id/bikefree_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="支付宝确认"
+                android:textColor="@color/ebike_title_li"
+                android:textSize="@dimen/text_large_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/paymentitle"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp" >
+
+            <TextView
+                android:id="@+id/storetitle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="支付金额"
+                android:textSize="@dimen/text_middle_size" />
+
+            <EditText
+                android:id="@+id/totalCost"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                android:text="100元"
+                android:textSize="@dimen/text_middle_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/drivername"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="支付密码"
+                android:textSize="@dimen/text_middle_size" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_middle_size" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/payconfirmbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/selector_button_pressed"
+            android:text="确认支付"
+            android:textColor="@color/ebike_title_li"
+            android:textSize="@dimen/text_little_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

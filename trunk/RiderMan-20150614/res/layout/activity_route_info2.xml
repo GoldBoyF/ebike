@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:id="@+id/paymentitle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:background="@color/darkcyan"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:gravity="center"
+            android:text="推荐详情"
+            android:textColor="@color/ebike_title_li"
+            android:textSize="@dimen/text_large_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title" >
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginTop="15dp"
+                 android:gravity="center_vertical"
+                 android:text="“茶乡第一村”龙井骑行路线"
+                 android:textColor="@color/ebike_title_444444"
+                 android:textSize="@dimen/text_middle_size" />
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_lj1" />
+
+             <TextView
+                 android:id="@+id/TextView04"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 android:gravity="center_vertical"
+                 android:text="龙井乡双峰村龙井路88号"
+                 android:textColor="@color/ebike_title_999999"
+                 android:textSize="@dimen/text_little_size" />
+
+             <TextView
+                 android:id="@+id/TextView05"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:gravity="center_vertical"
+                 android:text="推荐租车点：龙井租车店"
+                 android:textColor="@color/ebike_green_light"
+                 android:textSize="@dimen/text_little_size" />
+
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="路线：杨公堤—虎跑路—五老峰隧道连接线—龙井路—龙井村"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView01"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_lj2" />
+
+             <TextView
+                 android:id="@+id/TextView01"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="虎跑路上第一个景点,满陇桂雨公园有太阳广场、满园春、二泉映月湖、广寒宫、月华殿、丹桂馆、山幽小居、一亩园茶寮、月老阁、恐龙谷、游乐园等20余个景点和9000多株桂树。"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView02"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_lj3" />
+
+             <TextView
+                 android:id="@+id/TextView02"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="在虎跑附近路边上原有一井，上有四个井眼称四眼井，对面有一条小路，两边桂树成林，行约500米便是石屋洞。"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView03"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_lj4" />
+
+             <TextView
+                 android:id="@+id/TextView03"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="石屋洞洞中有洞，洞洞相连。主洞最高处约5.6米，深约7.8米，宽约10米，洞形宽敞，轩朗如屋，故名。洞后有一穴，上宽下窄，状如浮螺，曰“沧海浮螺”。洞顶有“擒云亭”。洞内旧有罗汉、天王及飞天浮雕等石刻。洞左有新建的“桂花厅”。庭院内遍植桂花和秋色树木，每逢秋季，这里桂花盛开，香飘四溢，成为杭城赏桂胜地。"
+                 android:textColor="@color/ebike_title_999999" />
+      
+            </LinearLayout>
+            
+
+    </ScrollView>
+
+</RelativeLayout>

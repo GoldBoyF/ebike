@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:id="@+id/paymentitle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:background="@color/darkcyan"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:gravity="center"
+            android:text="车辆预定"
+            android:textColor="@color/ebike_title_li"
+            android:textSize="@dimen/text_large_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitesmoke"
+            tools:context="${relativePackage}.${activityClass}" >
+
+            <!-- 如果订单为空 记得改为返回功能 -->
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:id="@+id/paymentitle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:background="@color/darkcyan"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:gravity="center"
+            android:text="推荐详情"
+            android:textColor="@color/ebike_title_li"
+            android:textSize="@dimen/text_large_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title" >
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginTop="15dp"
+                 android:gravity="center_vertical"
+                 android:text="九溪十八涧骑行路线"
+                 android:textColor="@color/ebike_title_444444"
+                 android:textSize="@dimen/text_middle_size" />
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_9x" />
+
+             <TextView
+                 android:id="@+id/TextView04"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 android:gravity="center_vertical"
+                 android:text="杭州市西湖区之江路54号"
+                 android:textColor="@color/ebike_title_999999"
+                 android:textSize="@dimen/text_little_size" />
+
+             <TextView
+                 android:id="@+id/TextView05"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:gravity="center_vertical"
+                 android:text="之江聪聪租车店"
+                 android:textColor="@color/ebike_green_light"
+                 android:textSize="@dimen/text_little_size" />
+
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="九溪十八涧位于浙江省杭州市的著名景点西湖之西的群山中，上自龙井起蜿蜒曲折7公里入钱塘江。九溪十八涧景色天然，少有匠气，“溪水因山而曲折”，忽左忽右，其中6处溪流漫过山径，上置石步，游人可涉水溪中，也可自石上鹤步而过，各有意趣。身历其境，尘襟为之一洗，更有一种人在画中游的感觉。"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView01"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_9x2" />
+
+             <TextView
+                 android:id="@+id/TextView01"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="九溪十八涧的起点标记，从此开始要徒步过好多条小溪水。途中很漂亮的景点，湖中有几颗红色的烟树，色彩绚丽，很多情侣在此拍婚纱照。"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView02"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_9x3" />
+
+             <TextView
+                 android:id="@+id/TextView02"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="九溪之水发源于杨梅岭，途中汇合了青湾、宏法、方家、佛石、百丈、唐家、小康、云栖、渚头的溪流，因称九溪，溪水一路上穿越青山翠谷，又汇集了无数细流，所以称九溪十八涧。古时候人们常喜欢用“九”字来表示数量的众多。其实，这条山区溪流一路上穿林绕麓，不知汇合了多少细流。十八涧，原是指这条山区溪流的源头----龙井一带的无数山涧泉流而说的。所以，十八涧也是古时人们用“九”的倍数来形容山涧泉流众多的意思，并非只有十八条山涧。"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView03"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_9x4" />
+
+             <TextView
+                 android:id="@+id/TextView03"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="  小家伙很给力的还摆出了神龙摆尾的姿势。绝对的清凉避暑好去处。"
+                 android:textColor="@color/ebike_title_999999" />
+      
+            </LinearLayout>
+            
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/whitesmoke"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+         android:id="@+id/paymentitle"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/tile_height"
+           android:background="@color/darkcyan"
+         android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+
+            <TextView
+                android:id="@+id/bikefree_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="订单确认"
+                android:textColor="@color/ebike_title_li"
+                android:textSize="@dimen/text_large_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+         android:id="@+id/diviline"
+         android:layout_width="fill_parent"
+         android:layout_height="2dp"
+         android:layout_below="@id/paymentitle"
+         android:scaleType="fitXY"
+         android:src="@drawable/img_horizionlinebar" />
+
+    <!-- 如果订单为空 记得改为返回功能 -->
+
+    <ScrollView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/diviline"
+        android:background="@color/whitesmoke" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whitesmoke"
+            tools:context="${relativePackage}.${activityClass}" >
+
+            <LinearLayout
+                android:id="@+id/bikeshop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/storetitle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="下单日期："
+                    android:textSize="@dimen/text_middle_size" />
+
+                <TextView
+                    android:id="@+id/book_date_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="2014年7月8日"
+                    android:textSize="@dimen/text_middle_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/diviline2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bikeshop"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_horizionlinebar" />
+
+            <ListView
+                android:id="@+id/bikeorderlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diviline2"
+                android:clickable="false"
+                android:dividerHeight="0dp" >
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/contactlinearylayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bikeorderlist"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/textlinearlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/drivername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:text="总金额"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_little_size" />
+
+                    <TextView
+                        android:id="@+id/totalcost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="100"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_little_size" />
+
+                    <TextView
+                        android:id="@+id/name_adviec"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_little_size" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/payconfirmbutton"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/selector_button_pressed"
+                    android:text="支付宝付款"
+                    android:textColor="@color/ebike_title_li" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

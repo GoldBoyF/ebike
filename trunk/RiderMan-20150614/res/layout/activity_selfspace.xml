@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+     >
+    
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:background="@color/darkcyan"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/tile_height" >
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/selfspace"
+            android:textSize="@dimen/text_large_size" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" 
+        android:background="@color/ebike_light_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/not_login_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="20dp"
+                        android:text="你还未登录"
+                        android:textSize="@dimen/text_middle_size" />
+
+                    <Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/tile_height"
+                        android:background="@drawable/selector_green_btn"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_large_size" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="还没有账号？"
+                            android:textSize="@dimen/text_little_size" />
+
+                        <TextView
+                            android:id="@+id/register_link_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="点此注册"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text_little_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/login_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/photo_imageview"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/default_photo" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ebike_split_line" />
+
+                <TextView
+                    android:id="@+id/selfspace_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tile_height"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/selfspaceSetting"
+                    android:textColor="@color/gray"
+                    android:background="@drawable/selector_textview_btn"
+                    android:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android:id="@+id/textView423"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/ebike_split_line" />
+
+                <TextView
+                    android:id="@+id/selfspace_orderList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tile_height"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/orderList"
+                    android:textColor="@color/gray"
+                    android:background="@drawable/selector_textview_btn"
+                    android:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/ebike_split_line" />
+
+                <TextView
+                    android:id="@+id/selfspace_account_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tile_height"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/accountSetting"
+                    android:textColor="@color/gray"
+                    android:background="@drawable/selector_textview_btn"
+                    android:textSize="@dimen/text_little_size" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ebike_split_line" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_green_btn"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large_size" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

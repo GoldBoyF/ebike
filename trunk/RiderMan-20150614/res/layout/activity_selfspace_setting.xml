@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebike_light_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:background="@color/darkcyan"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/tile_height" >
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/selfspaceSetting"
+            android:textSize="@dimen/text_large_size" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"     
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_returnback"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+       <ImageView
+            android:id="@+id/imageView1441"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+        
+        <RelativeLayout
+            	android:id="@+id/photo_block"
+		        android:layout_width="fill_parent"
+		        android:layout_height="120dp" >
+
+            <TextView
+	            android:id="@+id/textView33"
+	            android:layout_width="fill_parent"
+	            android:paddingLeft="20sp"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:text="@string/photo"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/text_little_size"
+	            android:background="@drawable/selector_textview_btn" />
+
+            <TextView
+                android:id="@+id/textView300"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/text_large_size"
+                android:paddingRight="@dimen/text_margin"
+                android:text=">" 
+                android:textColor="@color/gray"/>
+
+            <ImageView
+                android:id="@+id/photo_imageview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_toLeftOf="@+id/textView300"
+                android:src="@drawable/default_photo" />
+
+		    </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/imageView1442"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+        
+        <RelativeLayout
+            android:id="@+id/nickname_block"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/tile_height" >
+            
+            <TextView
+	            android:id="@+id/textView345"
+	            android:layout_width="fill_parent"
+	            android:paddingLeft="20sp"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:text="@string/nickname"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/text_little_size" 
+	            android:background="@drawable/selector_textview_btn"/>
+            
+            <TextView
+	            android:id="@+id/nickname_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_toLeftOf="@+id/textView301"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:paddingRight="10dp"
+	            android:text="王二小"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/text_little_size" />
+            
+            <TextView
+                android:id="@+id/textView301"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/text_margin"
+                android:textSize="@dimen/text_large_size"
+                android:text=">"
+                android:textColor="@color/gray" />
+		</RelativeLayout>
+		    
+        <ImageView
+            android:id="@+id/imageView1447"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+        
+        <RelativeLayout
+            android:id="@+id/render_block"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/tile_height" >
+            
+            <TextView
+	            android:id="@+id/textView123"
+	            android:layout_width="fill_parent"
+	            android:paddingLeft="20sp"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:text="@string/render"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/text_little_size" 
+	            android:background="@drawable/selector_textview_btn"/>
+            
+             <TextView
+	            android:id="@+id/render_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_toLeftOf="@+id/textView302"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:paddingRight="10dp"
+	            android:text="男"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/text_little_size"
+	             />
+            
+            
+            <TextView
+                android:id="@+id/textView302"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingRight="@dimen/text_margin"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/text_large_size"
+                android:text=">"
+                android:textColor="@color/gray" />
+	    </RelativeLayout>
+		    
+        <ImageView
+            android:id="@+id/imageView1444"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

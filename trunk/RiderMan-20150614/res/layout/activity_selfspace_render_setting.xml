@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebike_light_bg"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:background="@color/darkcyan"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/tile_height" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/render"
+            android:textSize="@dimen/text_large_size" />
+    </RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/gap"
+	    android:orientation="vertical" 
+	    android:background="@color/white">
+        
+	    <ImageView
+            android:id="@+id/imageView14241"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+
+	    <LinearLayout
+	        android:id="@+id/male_layout"
+	        android:layout_width="match_parent"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="10dp"
+	        android:layout_height="50dp" >
+
+	        <TextView
+	            android:id="@+id/male_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:paddingRight="10dp"
+	            android:text="@string/male"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/text_little_size" />
+
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="match_parent" >
+
+	            <ImageView
+	                android:id="@+id/male_imageview"
+	                android:layout_alignParentRight="true"
+	                android:layout_width="30dp"
+	                android:layout_height="fill_parent"
+	                android:src="@drawable/icon_ok" />
+
+	        </RelativeLayout>
+
+	    </LinearLayout>
+	    
+	    <ImageView
+            android:id="@+id/imageView144231"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+
+	    <LinearLayout
+	        android:id="@+id/female_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp" 
+	        android:paddingLeft="20dp"
+	        android:paddingRight="10dp">
+
+	        <TextView
+	            android:id="@+id/female_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:paddingRight="10dp"
+	            android:text="@string/female"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/text_little_size" />
+
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent" >
+
+	            <ImageView
+	                android:id="@+id/female_imageview"
+	                android:layout_width="30dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_height="fill_parent"
+	                android:src="@drawable/icon_ok" />
+
+	        </RelativeLayout>
+
+	    </LinearLayout>
+	    
+	    <ImageView
+            android:id="@+id/imageView14421"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/img_horizionlinebar" />
+	</LinearLayout>
+	
+</LinearLayout>

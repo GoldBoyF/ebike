@@ -1,0 +1,850 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 不要随便用主题 避免出错 -->
+
+    <LinearLayout
+        android1:id="@+id/selectlinearlayout"
+        android1:layout_width="fill_parent"
+        android1:layout_height="48dp"
+        android1:layout_alignParentBottom="true"
+        android1:background="@drawable/corner_view_side_homemenu_bottom" >
+
+        <LinearLayout
+            android1:id="@+id/linearlayoutrent"
+            android1:layout_width="match_parent"
+            android1:layout_height="fill_parent"
+            android1:layout_weight="1"
+            android1:background="@color/linearselect"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView_rent"
+                android1:layout_width="30dp"
+                android1:layout_height="30dp"
+                android1:layout_gravity="center_horizontal"
+                android1:background="@color/transparent"
+                android1:src="@drawable/icon_zuche_pressed" />
+
+            <TextView
+                android1:id="@+id/bikerent"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_gravity="center_horizontal"
+                android1:text="租车"
+                android1:textColor="@color/ebike_green_light"
+                android1:textSize="@dimen/text_little2_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/linearlayoutrouting"
+            android1:layout_width="match_parent"
+            android1:layout_height="fill_parent"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_background"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView_advice"
+                android1:layout_width="30dp"
+                android1:layout_height="30dp"
+                android1:layout_gravity="center_horizontal"
+                android1:src="@drawable/icon_tuijian_unpressed" />
+
+            <TextView
+                android1:id="@+id/line_advice"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_gravity="center_horizontal"
+                android1:text="线路推荐"
+                android1:textColor="@color/darkgray999"
+                android1:textSize="@dimen/text_little2_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/linearlayoutshare"
+            android1:layout_width="match_parent"
+            android1:layout_height="fill_parent"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_background"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView_share"
+                android1:layout_width="30dp"
+                android1:layout_height="30dp"
+                android1:layout_gravity="center_horizontal"
+                android1:src="@drawable/icon_fenxiang_unpressed" />
+
+            <TextView
+                android1:id="@+id/routershare"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_gravity="center_horizontal"
+                android1:text="线路分享"
+                android1:textColor="@color/darkgray999"
+                android1:textSize="@dimen/text_little2_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/linearlayoutperinfo"
+            android1:layout_width="match_parent"
+            android1:layout_height="fill_parent"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_background"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView_personal"
+                android1:layout_width="30dp"
+                android1:layout_height="30dp"
+                android1:layout_gravity="center_horizontal"
+                android1:src="@drawable/icon_user_unpressed" />
+
+            <TextView
+                android1:id="@+id/personalinfo"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_gravity="center_horizontal"
+                android1:text="个人中心"
+                android1:textColor="@color/darkgray999"
+                android1:textSize="@dimen/text_little2_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android1:id="@+id/baidumap"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:layout_above="@id/selectlinearlayout"
+        android1:layout_marginBottom="dp"
+        android1:focusable="true"
+        android1:focusableInTouchMode="true"
+        android1:orientation="vertical" >
+
+        <com.baidu.mapapi.map.MapView
+            android1:id="@+id/bmapView"
+            android1:layout_width="fill_parent"
+            android1:layout_height="fill_parent" >
+        </com.baidu.mapapi.map.MapView>
+    </LinearLayout>
+
+    <LinearLayout
+        android1:id="@+id/searchbar"
+        android1:layout_width="fill_parent"
+        android1:layout_height="50dp"
+        android1:background="@color/darkcyan"
+        android1:orientation="vertical" >
+
+        <ImageButton
+            android1:id="@+id/searchDesButton"
+            android1:layout_width="35dp"
+            android1:layout_height="35dp"
+            android1:layout_gravity="right|center_vertical"
+            android1:layout_marginLeft="10dp"
+            android1:layout_marginRight="10dp"
+            android1:layout_marginTop="10dp"
+            android1:background="@color/transparent"
+            android1:scaleType="fitXY"
+            android1:src="@drawable/search_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android1:id="@+id/setluopanmode"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@id/searchbar"
+        android1:layout_centerHorizontal="false"
+        android1:layout_centerVertical="false"
+        android1:layout_marginRight="10dp"
+        android1:layout_marginTop="200dp"
+        android1:orientation="vertical" >
+
+        <ImageButton
+            android1:id="@+id/mapStateButton"
+            android1:layout_width="30dp"
+            android1:layout_height="30dp"
+            android:background="#00000000"
+            android1:scaleType="fitXY"
+            android1:src="@drawable/selector_luopan" />
+
+        <TextView
+            android1:id="@+id/mapstate"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:gravity="center_horizontal"
+            android1:text="罗盘"
+            android1:textColor="@color/navy"
+            android1:textSize="@dimen/text_little_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="50dp"
+        android1:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_gravity="center_vertical" >
+
+            <TextView
+                android1:id="@+id/mapmode"
+                android1:layout_width="wrap_content"
+                android1:layout_height="30dp"
+                android1:layout_gravity="center_vertical"
+                android1:layout_marginTop="0dp"
+                android1:background="@color/white"
+                android1:gravity="center"
+                android1:paddingLeft="5dp"
+                android1:paddingRight="5dp"
+                android1:text="地图租车"
+                android1:textColor="#33cc33"
+                android1:textSize="@dimen/text_middle_size" />
+
+            <TextView
+                android1:id="@+id/listmode"
+                android1:layout_width="wrap_content"
+                android1:layout_height="30dp"
+                android1:layout_gravity="center_vertical"
+                android1:background="#57e457"
+                android1:gravity="center"
+                android1:paddingLeft="5dp"
+                android1:paddingRight="5dp"
+                android1:text="列表租车"
+                android1:textColor="@color/white"
+                android1:textSize="@dimen/text_middle_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android1:id="@+id/listmodecheck"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@id/selectlinearlayout"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="false"
+        android1:layout_below="@id/searchbar"
+        android1:background="@color/linearunselect"
+        android1:orientation="vertical" >
+
+        <LinearLayout
+            android1:id="@+id/contact"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:background="@color/white" >
+
+            <TextView
+                android1:id="@+id/allhangzhou"
+                android1:layout_width="wrap_content"
+                android1:layout_height="fill_parent"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_background"
+                android1:gravity="center"
+                android1:text="全杭州"
+                android1:textColor="@color/black"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView08"
+                android1:layout_width="1dp"
+                android1:layout_height="wrap_content"
+                android1:src="@drawable/img_linebar" />
+
+            <TextView
+                android1:id="@+id/biketype"
+                android1:layout_width="wrap_content"
+                android1:layout_height="fill_parent"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_background"
+                android1:gravity="center"
+                android1:text="车型"
+                android1:textColor="@color/black"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView07"
+                android1:layout_width="1dp"
+                android1:layout_height="wrap_content"
+                android1:src="@drawable/img_linebar" />
+
+            <TextView
+                android1:id="@+id/defaultsort"
+                android1:layout_width="wrap_content"
+                android1:layout_height="fill_parent"
+                android1:layout_weight="0.9"
+                android1:background="@drawable/selector_background"
+                android1:gravity="center"
+                android1:text="默认排序"
+                android1:textColor="@color/black"
+                android1:textSize="@dimen/text_little_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/imgunerlinecheck"
+            android1:layout_width="fill_parent"
+            android1:layout_height="2dp"
+            android1:background="@color/whitesmoke" >
+
+            <ImageView
+                android1:id="@+id/underline_left"
+                android1:layout_width="wrap_content"
+                android1:layout_height="2dp"
+                android1:layout_weight="1"
+                android1:background="@color/darkcyan"
+                android1:visibility="invisible" />
+
+            <ImageView
+                android1:id="@+id/underline_middle"
+                android1:layout_width="wrap_content"
+                android1:layout_height="2dp"
+                android1:layout_weight="0.9"
+                android1:background="@color/darkcyan"
+                android1:visibility="invisible" />
+
+            <ImageView
+                android1:id="@+id/underline_right"
+                android1:layout_width="wrap_content"
+                android1:layout_height="2dp"
+                android1:layout_weight="1.1"
+                android1:background="@color/darkcyan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/LinearLayout01"
+            android1:layout_width="fill_parent"
+            android1:layout_height="35dp"
+            android1:background="@color/curposition" >
+
+            <TextView
+                android1:id="@+id/curpositon"
+                android1:layout_width="wrap_content"
+                android1:layout_height="fill_parent"
+                android1:layout_weight="1"
+                android1:background="@color/transparent"
+                android1:gravity="left|center_vertical"
+                android1:paddingLeft="15dp"
+                android1:text="当前位置：杭州市滨江区网易大厦"
+                android1:textColor="@color/darkcyan" />
+
+            <ImageButton
+                android1:id="@+id/refresh"
+                android1:layout_width="20dp"
+                android1:layout_height="20dp"
+                android1:layout_gravity="center_vertical"
+                android1:layout_marginRight="20dp"
+                android1:background="@color/transparent"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/selector_refresh" />
+        </LinearLayout>
+
+        <ListView
+            android1:id="@+id/bikestorelist"
+            android1:layout_width="fill_parent"
+            android1:layout_height="wrap_content"
+            android1:background="@color/linearunselect"
+            android1:listSelector="@drawable/selector_background" >
+        </ListView>
+    </LinearLayout>
+
+    <ScrollView
+        android1:id="@+id/FilterscrollAllHZ"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:layout_above="@id/selectlinearlayout"
+        android1:layout_marginTop="92dp"
+        android1:background="@color/whitesmoke"
+        android1:visibility="invisible" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:background="@color/whitesmoke"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView18"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView1_1"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="全杭州"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView05"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView1_2"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_marginLeft="1dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="上城"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView11"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView2_2"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_marginLeft="1dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="下城"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView12"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView2_1"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="拱墅"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView14"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView3_1"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="萧山"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView13"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView3_2"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_marginLeft="1dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="余杭"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView15"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView4_2"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_marginLeft="1dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="滨江"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView16"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/xihu"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="西湖"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView17"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView4_1"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="江干"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView25"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextView5_2"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:layout_marginLeft="1dp"
+                android1:layout_weight="1"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="桐庐"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView23"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android1:id="@+id/Filterbikesort"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:layout_above="@id/selectlinearlayout"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginTop="92dp"
+        android1:background="@color/whitesmoke"
+        android1:visibility="invisible" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:background="@color/gray"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView02"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextViewNoLimit"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="不限"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView22"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextViewSingle"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="单人车"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView21"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextViewDouble"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="双人车"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView19"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextViewMore"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="多人车"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView20"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+        </LinearLayout>
+    </ScrollView>
+    
+    <!-- added by hzjintianfan -->
+    <ScrollView
+        android1:id="@+id/filterOrder"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:layout_above="@id/selectlinearlayout"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginTop="92dp"
+        android1:background="@color/whitesmoke"
+        android1:visibility="invisible" >
+
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:background="@color/gray"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/ImageView021"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextViewDistance"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="按距离"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView222"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextViewGrade"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="按评价"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+            <ImageView
+                android1:id="@+id/ImageView213"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+
+            <TextView
+                android1:id="@+id/TextViewPrice"
+                android1:layout_width="fill_parent"
+                android1:layout_height="40dp"
+                android1:background="@drawable/selector_text_click_bg"
+                android1:clickable="true"
+                android1:gravity="center"
+                android1:text="按价格"
+                android1:textColor="@drawable/selector_text_click_color"
+                android1:textSize="@dimen/text_little_size" />
+
+           
+
+            <ImageView
+                android1:id="@+id/ImageView2011"
+                android1:layout_width="fill_parent"
+                android1:layout_height="1dp"
+                android1:scaleType="fitXY"
+                android1:src="@drawable/img_horizionlinebar" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android1:id="@+id/fragmentLayoutLike"
+        android1:layout_width="fill_parent"
+        android1:layout_height="fill_parent"
+        android1:layout_above="@id/selectlinearlayout" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:orientation="vertical"
+        android1:visibility="invisible" >
+
+        <TextView
+            android1:id="@+id/TextView5_1"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_text_click_bg"
+            android1:clickable="true"
+            android1:gravity="center"
+            android1:text="上城"
+            android1:textColor="@drawable/selector_text_click_color"
+            android1:textSize="@dimen/text_little_size"
+            android1:visibility="invisible" />
+
+        <TextView
+            android1:id="@+id/TextView6_1"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_text_click_bg"
+            android1:clickable="true"
+            android1:gravity="center"
+            android1:text="下城"
+            android1:textColor="@drawable/selector_text_click_color"
+            android1:textSize="@dimen/text_little_size"
+            android1:visibility="invisible" />
+
+        <TextView
+            android1:id="@+id/TextView6_2"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_marginLeft="1dp"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_text_click_bg"
+            android1:clickable="true"
+            android1:gravity="center"
+            android1:text="文心"
+            android1:textColor="@drawable/selector_text_click_color"
+            android1:textSize="@dimen/text_little_size"
+            android1:visibility="invisible" />
+
+        <TextView
+            android1:id="@+id/TextView7_1"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_text_click_bg"
+            android1:clickable="true"
+            android1:gravity="center"
+            android1:text="江干"
+            android1:textColor="@drawable/selector_text_click_color"
+            android1:textSize="@dimen/text_little_size"
+            android1:visibility="invisible" />
+
+        <TextView
+            android1:id="@+id/TextView7_2"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_marginLeft="1dp"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_text_click_bg"
+            android1:clickable="true"
+            android1:gravity="center"
+            android1:text="翠苑"
+            android1:textColor="@drawable/selector_text_click_color"
+            android1:textSize="@dimen/text_little_size"
+            android1:visibility="invisible" />
+
+        <TextView
+            android1:id="@+id/TextView19"
+            android1:layout_width="fill_parent"
+            android1:layout_height="40dp"
+            android1:layout_marginLeft="1dp"
+            android1:layout_weight="1"
+            android1:background="@drawable/selector_text_click_bg"
+            android1:clickable="true"
+            android1:gravity="center"
+            android1:text="申花"
+            android1:textColor="@drawable/selector_text_click_color"
+            android1:textSize="@dimen/text_little_size"
+            android1:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

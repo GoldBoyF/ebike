@@ -1,0 +1,280 @@
+/**
+ȫ������
+**/
+body {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #FFFFFF;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+*SMS listҳ����ʽ
+*/
+.bg-purple {
+	background-color: #6F5499;
+	color: #FFFFFF;
+}
+
+.bg-blue {
+	background-color: #4ECDC4;
+	color: #FFFFFF;
+}
+
+.bg-green {
+	background-color: #1FA67A;
+	color: #FFFFFF;
+}
+
+.sms-block {
+	padding:20px;
+	margin:10px;
+	font-weight: 700;
+	font-family: "微软雅黑";
+	text-align:center;
+}
+
+.sms-block p.line1{
+	font-size:16px;
+	
+}
+
+.sms-block p.line2{
+	font-size:30px;
+}
+
+thead {
+	font-family: "微软雅黑";
+}
+
+.margin-left-5{
+	margin-left:5px;
+}
+
+.padding-left-5{
+	padding-left:5px;
+}
+.checkbox {
+    font-weight: normal;
+}
+
+/**
+��¼����ʽ����
+**/
+
+
+.form-signin {
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-signin input[type="text"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: -1px;
+}
+
+.form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+    -moz-box-sizing: border-box;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+}
+
+
+/**
+��̨������ҳ����ʽ
+**/
+.navbar-theme {
+	background-color: #0D8FDB;
+}
+
+/**
+��β����
+**/
+.footer {
+    border-top: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+/**
+*�����������
+*/
+#list-tabs {
+	padding-top: 10px;
+}
+
+.activity-logo {
+	float: left;
+}
+
+.activity-block {
+	margin-left:170px;
+	font-size:13px;
+}
+
+.activity-block p{
+	padding: 0px;
+	margin: 0px
+}
+a.title{
+	color: #225599;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.time{
+	color: #999999;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.inline-right {
+	display: inline-block;
+    float: right;
+}
+.meta {
+	padding-top:8px;
+	padding-bottom:2px;
+	font-size:12px;
+}
+.meta span {
+	padding-left: 10px;
+	color: #0D8FDB;
+}
+
+.meta span:first-child {
+	padding-left: 0px;
+}
+
+.operation-group button{
+	margin-left:1px;
+}
+
+/**
+*ͨ�þ�����ʽ
+*/
+.center {
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+/**
+*�ص�������ݼ�
+*/
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	height: 38px;  /* Height of image */
+	width: 38px; /* Width of image */
+	background: url("../images/top.png") no-repeat;
+}
+
+label {
+	font-weight:400;
+}
+
+/**
+*����datetimepicker�ڱ?�е�ƫ��
+*/
+div.form-group div.form_datetime {
+	padding-left: 15px;
+}
+
+div.popover-content .error {
+	color: #A94442;
+}
+
+form div.popover{
+	background-color: #F2DEDE;
+	color: 	#A94442;
+}
+
+form .popover.right > .arrow:after {
+	border-right-color: #F2DEDE;
+}
+
+/**
+*推文页面样式
+*/
+.media, .media-body {
+    overflow: visible;
+}
+.media-body {
+	margin-left:60px;
+}
+
+.meta-split {
+    margin: 0 6px 0 8px;
+}
+
+.lotspic-list-pre {
+	float: left;
+    font-size: 0;
+    margin-left: -5px;
+    width: 255px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.lotspic-list-pre li {
+    display: inline;
+    float: left;
+    height: 80px;
+    margin: 5px 0 0 5px;
+    overflow: hidden;
+    position: relative;
+    width: 80px;
+}
+
+/* .lotspic-list-pre li img {
+	height: 80px;
+    width: 80px;
+} */
+
+.bigcursor {
+    cursor: url("../images/big.cur"), auto !important;
+}
+
+.media-heading span {
+	color: #0D8FDB;
+	font-size:14px;
+}
+
+#legend {
+	padding-bottom:5px;
+}

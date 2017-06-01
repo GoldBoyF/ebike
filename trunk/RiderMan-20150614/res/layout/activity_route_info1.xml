@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:id="@+id/paymentitle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:background="@color/darkcyan"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_returnback" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bikefree_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tile_height"
+            android:gravity="center"
+            android:text="推荐详情"
+            android:textColor="@color/ebike_title_li"
+            android:textSize="@dimen/text_large_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title" >
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginTop="15dp"
+                 android:gravity="center_vertical"
+                 android:text="西湖美景三月天•骑行路线"
+                 android:textColor="@color/ebike_title_444444"
+                 android:textSize="@dimen/text_middle_size" />
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_xihu" />
+
+             <TextView
+                 android:id="@+id/TextView04"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 android:gravity="center_vertical"
+                 android:text="杭州市西湖杨堤87号"
+                 android:textColor="@color/ebike_title_999999"
+                 android:textSize="@dimen/text_little_size" />
+
+             <TextView
+                 android:id="@+id/TextView05"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:gravity="center_vertical"
+                 android:text="推荐租车点：西湖自行车铺"
+                 android:textColor="@color/ebike_green_light"
+                 android:textSize="@dimen/text_little_size" />
+
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="路线： 柳浪闻莺——涌金广场——西湖博物馆——湖滨路——六公园——断桥——北山路——杨公堤——花港观鱼——雷峰塔
+路线如图：
+"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView01"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_router2" />
+
+             <TextView
+                 android:id="@+id/TextView01"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="柳浪闻莺位于西湖东南岸。全园分友谊、闻莺、聚景、南园四个景区。柳丛衬托着紫楠、雪松、广玉兰及碧桃、海棠、月季等异木名花。是欣赏三面云山一面水的观景佳地。柳浪闻莺内的柳型各具特色：柳丝飘动似贵妃醉酒，称“醉柳”；枝叶繁茂如狮头，称“狮柳”；远眺象少女浣纱，称“浣纱柳”等。有柳洲之名。其间黄莺飞舞，竞相啼鸣，故有“柳浪闻莺”之称。"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView02"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_leifengta" />
+
+             <TextView
+                 android:id="@+id/TextView02"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="雷峰塔又名皇妃塔，又称西关砖塔。在西湖南岸夕照山的雷峰上，南屏山日慧峰下净慈寺前。雷峰塔为吴越国王钱俶因黄妃得子建，初名“黄妃塔”因地建雷峰，后人改称“雷峰塔”。重建之后的雷峰塔非常大气。外表古雅，内里新奇。"
+                 android:textColor="@color/ebike_title_999999" />
+
+             <ImageView
+                 android:id="@+id/ImageView03"
+                 android:layout_width="fill_parent"
+                 android:layout_height="125dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/img_huagangguanyu" />
+
+             <TextView
+                 android:id="@+id/TextView03"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:lineSpacingExtra="2dp"
+                 android:text="花港观鱼地处西湖西南，三面临水，一面倚山。是一个占地300余亩的大型公园。西山大麦岭后的花家山麓，有一条清溪流经此处注入西湖，故称花港。池岸曲折自然，池中堆土成岛，池上架设曲桥，倚桥栏俯看，数千尾金鳞红鱼结队往来，泼刺戏水。"
+                 android:textColor="@color/ebike_title_999999" />
+      
+            </LinearLayout>
+            
+
+    </ScrollView>
+
+</RelativeLayout>
